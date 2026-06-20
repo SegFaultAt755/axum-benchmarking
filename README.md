@@ -121,12 +121,24 @@ To ensure consistency, all tests were performed in a clean, isolated containeriz
 Plaintext
 
 ```
-Not yet...
+Running 20s test @ http://127.0.0.1:8000/greeting  
+ 5 threads and 100 connections  
+ Thread Stats   Avg      Stdev     Max   +/- Stdev  
+   Latency   431.69us  205.50us   4.20ms   71.68%  
+   Req/Sec    43.68k     1.23k   47.55k    70.30%  
+ 4345925 requests in 20.01s, 538.80MB read  
+Requests/sec: 217223.56  
+Transfer/sec:     26.93MB
 ```
 
 **Results:**
 
-_No results yet..._
+| **Key Metric**           | **Result**      |
+| ------------------------ | --------------- |
+| **Average Latency**      | 431.69 us       |
+| **Total Requests**       | 4,345,925       |
+| **Throughput (Req/Sec)** | 217223.56 req/s |
+| **Transfer Rate**        | 26.93 MB/s      |
 
 ### `/request` Benchmark
 
@@ -135,9 +147,21 @@ _No results yet..._
 Plaintext
 
 ```
-Not yet...
+Running 20s test @ http://127.0.0.1:8000/request  
+ 5 threads and 100 connections  
+ Thread Stats   Avg      Stdev     Max   +/- Stdev  
+   Latency     3.17ms  479.84us  28.69ms   97.92%  
+   Req/Sec     6.36k   180.02     6.55k    94.80%  
+ 632763 requests in 20.01s, 700.61MB read  
+Requests/sec:  31625.35  
+Transfer/sec:     35.02MB
 ```
 
 **Results:**
 
-_No results yet..._
+| **Key Metric**           | **Result**     |
+| ------------------------ | -------------- |
+| **Average Latency**      | 3.17 ms        |
+| **Total Requests**       | 632,763        |
+| **Throughput (Req/Sec)** | 31625.35 req/s |
+| **Transfer Rate**        | 35.02 MB/s     |
